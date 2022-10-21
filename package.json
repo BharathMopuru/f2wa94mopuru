@@ -1,0 +1,20 @@
+{
+  "name": "f2wa94mopuru",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.4",
+    "express": "~4.16.1",
+    "http-errors": "^2.0.0",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2"
+  },
+  "description": "assignment",
+  "main": "app.js",
+  "author": "S555694",
+  "license": "ISC"
+}
