@@ -11,12 +11,13 @@ router.get('/', function(req, res, next) {
     num = search_params.get("x")
   }
 
-  //result = Math.hypot(num)
-  //result1 = Math.ceil(num)
-  ressult2 = Math.clz32(num)
-  //res.send(`Math.hypot() applied to ${num} is ${result}`)
-  //res.send(`Math.ceil() applied to ${num} is ${result1}`)
-  res.send(`MAth.clz32() applied to ${num} is ${ressult2}`)
+  result = Math.hypot(num)
+  result1 = Math.ceil(num)
+  result2 = Math.clz32(num)
+  res.render(`computation`,{title:"computation",num:num,result:result,result2:result2}) 
+  //res.render(`Math.hypot() applied to ${num} is ${result}`)
+  //res.render(`Math.ceil() applied to ${num} is ${result1}`)
+  //res.render(`MAth.clz32() applied to ${num} is ${ressult2}`)
 });
 
 module.exports = router;
